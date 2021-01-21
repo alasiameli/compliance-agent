@@ -4,12 +4,19 @@ Está diseñada para recopilar información de equipos, con Linux, en los cuales
 
 Dentro de los datos recopilados, es posible encontrar:
 
+
 ●      Información sobre el procesador.
+
 ●      Nombre del sistema operativo.
+
 ●      Versión del sistema operativo.
+
 ●      Listado de procesos corriendo.
+
 ●      Usuarios con una sesión abierta en el sistema.
+
 ●      IP del host en el que se ejecuta.  
+
 
 Esta aplicación usa comandos del Sistema Operativo Linux.
 
