@@ -28,3 +28,17 @@ Para correrla es necesario:
 ·  Ejecutar el archivo main.py
 
 NOTA: En la carpeta venv se subieron las librerías necesarias para poder ejecutar “compliance-agent”.
+
+Dockerizacion de compliance agent
+
+-Generar imagen del contenedor
+
+sudo docker build -t compliance-agent:latest .
+
+-Correr el contenedor de docker
+
+sudo docker run -p 8081:8081 --link api --name agent compliance-agent
+
+Nota: se vinculan los dos contenedores, si se elige correr ambas aplicaciones dockerizadas, modificar la url seteada en main.py (compliance-agent) por la url = "http://api:5000/api/v1/compliance/system_info" para poder alcanzar al otro contenedor.
+
+
