@@ -71,6 +71,11 @@ def main():
     active_users = get_active_users()
     data = build_json_data(processor_info, os_name, os_version, server_ip, running_processes, active_users)
 
+    # url to replace if use docker to run container application agent to container api
+    # url = "http://api:5000/api/v1/compliance/system_info"
+    # url to replace if you run application agent locally to container api
+    # url = "http://0.0.0.0:5000/api/v1/compliance/system_info"
+    # url to replace if you run both apps locally without docker
     url = "http://127.0.0.1:5000/api/v1/compliance/system_info"
 
     response = send_json_data(url, data)

@@ -1,0 +1,4 @@
+# ignore folder files
+venv*
+__pycache__
+.idea*
